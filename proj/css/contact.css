@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Black.eot");
+  src: url("../fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Black.woff2") format("woff2"), url("../fonts/Lato/Lato-Black.woff") format("woff"), url("../fonts/Lato/Lato-Black.ttf") format("truetype"), url("../fonts/Lato/Lato-Black.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Medium.eot");
+  src: url("../fonts/Lato/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato/Lato-Medium.woff") format("woff"), url("../fonts/Lato/Lato-Medium.ttf") format("truetype"), url("../fonts/Lato/Lato-Medium.svg#Lato-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Semibold.eot");
+  src: url("../fonts/Lato/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato/Lato-Semibold.woff") format("woff"), url("../fonts/Lato/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato/Lato-Semibold.svg#Lato-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Heavy.eot");
+  src: url("../fonts/Lato/Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato/Lato-Heavy.woff") format("woff"), url("../fonts/Lato/Lato-Heavy.ttf") format("truetype"), url("../fonts/Lato/Lato-Heavy.svg#Lato-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Semibold_1.eot");
+  src: url("../fonts/Lato/Lato-Semibold_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Semibold_1.woff2") format("woff2"), url("../fonts/Lato/Lato-Semibold_1.woff") format("woff"), url("../fonts/Lato/Lato-Semibold_1.ttf") format("truetype"), url("../fonts/Lato/Lato-Semibold_1.svg#Lato-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Black_1.eot");
+  src: url("../fonts/Lato/Lato-Black_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Black_1.woff2") format("woff2"), url("../fonts/Lato/Lato-Black_1.woff") format("woff"), url("../fonts/Lato/Lato-Black_1.ttf") format("truetype"), url("../fonts/Lato/Lato-Black_1.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Medium_1.eot");
+  src: url("../fonts/Lato/Lato-Medium_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Medium_1.woff2") format("woff2"), url("../fonts/Lato/Lato-Medium_1.woff") format("woff"), url("../fonts/Lato/Lato-Medium_1.ttf") format("truetype"), url("../fonts/Lato/Lato-Medium_1.svg#Lato-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Heavy_1.eot");
+  src: url("../fonts/Lato/Lato-Heavy_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Heavy_1.woff2") format("woff2"), url("../fonts/Lato/Lato-Heavy_1.woff") format("woff"), url("../fonts/Lato/Lato-Heavy_1.ttf") format("truetype"), url("../fonts/Lato/Lato-Heavy_1.svg#Lato-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  background-color: #fafafa !important; }
+
+.contact-block {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  margin: 5px;
+  position: relative; }
+  .contact-block img {
+    position: absolute;
+    top: 35%;
+    left: 31%; }
+
+.contact_data-1 {
+  position: absolute;
+  top: 30%;
+  display: inline-block;
+  width: 300px;
+  float: left; }
+  .contact_data-1 p {
+    position: relative;
+    top: -70px;
+    text-align: center;
+    margin: 0; }
+
+.contact_data-2 {
+  position: absolute;
+  top: 50%;
+  display: inline-block; }
+  .contact_data-2 p {
+    display: inline-block;
+    position: relative;
+    top: -35px; }
+
+.contact_data-3 {
+  position: absolute;
+  top: 70%;
+  display: inline-block; }
+  .contact_data-3 p {
+    display: inline-block;
+    position: relative;
+    top: -20px; }
+
+.contact h2 {
+  font-family: Lato, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0d257b;
+  margin-top: 30%; }
+
+.contact iframe {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2); }
+
+button {
+  position: relative;
+  top: -20px;
+  left: 2%;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #9dca00;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4d6fac), to(#65b5fe));
+  background-image: -o-linear-gradient(bottom, #4d6fac 0%, #65b5fe 100%);
+  background-image: linear-gradient(0deg, #4d6fac 0%, #65b5fe 100%);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.4);
+  width: 20%;
+  height: 45px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  border-radius: 6px; }
+
+button:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4d6fac), color-stop(200%, #65b5fe));
+  background-image: -o-linear-gradient(bottom, #4d6fac 0%, #65b5fe 200%);
+  background-image: linear-gradient(0deg, #4d6fac 0%, #65b5fe 200%);
+  -webkit-box-shadow: 0px 3px 3px 0px #fff;
+          box-shadow: 0px 3px 3px 0px #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+/*# sourceMappingURL=contact.css.map */
