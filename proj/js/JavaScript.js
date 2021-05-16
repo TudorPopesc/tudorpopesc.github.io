@@ -49,43 +49,43 @@ function changeElem (title , price) {
 
 elem.btn1.addEventListener('click' , () =>{
 	changeElem('Навес для авто' , '6 999');
-	image.src = '../img/photo1.jpg';
+	image.src = './img/photo1.jpg';
 	elem.modall.classList.remove('hide'); 
 });
 
 elem.btn2.addEventListener('click' , () =>{
 	changeElem('Навес к дому' , '80 000');
-	image.src = '../img/photo2.png';
+	image.src = './img/photo2.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn3.addEventListener('click' , () =>{
 	changeElem('Навес над бассейном','15 000');
-	image.src = '../img/photo3.png';
+	image.src = './img/photo3.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn4.addEventListener('click' , () =>{
 	changeElem('Козырьки','33 333');
-	image.src = '../img/photo4.png';
+	image.src = './img/photo4.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn5.addEventListener('click' , () =>{
 	changeElem('Навес над мангальной зоной','6 666');
-	image.src = '../img/photo5.png';
+	image.src = './img/photo5.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn6.addEventListener('click' , () =>{
 	changeElem('Беседки','6 969');
-	image.src = '../img/photo6.png';
+	image.src = './img/photo6.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn7.addEventListener('click' , () =>{
 	changeElem('Террасы','696 969');
-	image.src = '../img/photo7.png';
+	image.src = './img/photo7.png';
 	elem.modall.classList.remove('hide'); 
 });
 elem.btn8.addEventListener('click' , () =>{
 	changeElem('Навес над зоной парковки','89 000');
-	image.src = '../img/photo8.png';
+	image.src = './img/photo8.png';
 	elem.modall.classList.remove('hide'); 
 });
 
