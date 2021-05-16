@@ -486,7 +486,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-2:after {
+  .howwork .block-img-2::after {
     content: '2';
     position: relative;
     left: -9%;
@@ -496,7 +496,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-3:after {
+  .howwork .block-img-3::after {
     content: '3';
     position: relative;
     left: -9%;
@@ -506,7 +506,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-4:after {
+  .howwork .block-img-4::after {
     content: '4';
     position: relative;
     left: -9%;
@@ -516,7 +516,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-5:after {
+  .howwork .block-img-5::after {
     content: '5';
     position: relative;
     left: -9%;
@@ -526,7 +526,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-6:after {
+  .howwork .block-img-6::after {
     content: '6';
     position: relative;
     left: -9%;
@@ -536,7 +536,7 @@ a.btn.effect:after {
     line-height: 24px;
     font-weight: 600;
     color: #39bde3; }
-  .howwork .block-img-6:before {
+  .howwork .block-img-6::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -545,7 +545,7 @@ a.btn.effect:after {
     height: 50px;
     border: 2px solid #65b5fe;
     border-style: solid hidden hidden solid; }
-  .howwork .block-img-1:before {
+  .howwork .block-img-1::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -554,7 +554,7 @@ a.btn.effect:after {
     height: 50px;
     border: 2px solid #65b5fe;
     border-style: solid hidden hidden solid; }
-  .howwork .block-img-2:before {
+  .howwork .block-img-2::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -563,7 +563,7 @@ a.btn.effect:after {
     height: 50px;
     border: 2px solid #65b5fe;
     border-style: solid hidden hidden solid; }
-  .howwork .block-img-3:before {
+  .howwork .block-img-3::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -572,7 +572,7 @@ a.btn.effect:after {
     height: 50px;
     border: 2px solid #65b5fe;
     border-style: solid hidden hidden solid; }
-  .howwork .block-img-4:before {
+  .howwork .block-img-4::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -581,7 +581,7 @@ a.btn.effect:after {
     height: 50px;
     border: 2px solid #65b5fe;
     border-style: solid hidden hidden solid; }
-  .howwork .block-img-5:before {
+  .howwork .block-img-5::before {
     content: '';
     position: absolute;
     top: -6%;
@@ -594,22 +594,7 @@ a.btn.effect:after {
 .consultation {
   background-color: #0d257b;
   opacity: 0.9; }
-  .consultation h4:before {
-    content: '';
-    position: absolute;
-    top: 35%;
-    left: 35.6%;
-    width: 40px;
-    border: 1px solid #65b5fe;
-    margin-top: 6px; }
-  .consultation h4:after {
-    content: '';
-    position: absolute;
-    top: 35%;
-    left: 61%;
-    width: 40px;
-    border: 1px solid #65b5fe;
-    margin-top: 6px; }
+  
   .consultation h4 {
     font-size: 18px;
     color: #65b5fe;
@@ -629,9 +614,18 @@ a.btn.effect:after {
     padding: 10px 110px 10px 10px;
     margin-bottom: 100px;
     margin-top: 30px; }
+
+    .consultation input[type="submit"]{
+      color: black;
+      background-color: lightblue;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
   .consultation a {
-    position: absolute;
-    top: 18%;
+    position:relative;
+    top: 23%;
     -webkit-box-shadow: 0px 4px 14px 4px #0d257b;
             box-shadow: 0px 4px 14px 4px #0d257b;
     padding: 10px 50px;
@@ -672,7 +666,7 @@ a.btn.effect:after {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
-  .wrap span:before {
+  .wrap span::before {
     content: '';
     position: absolute;
     top: 350%;
@@ -684,7 +678,7 @@ a.btn.effect:after {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
-  .wrap span:after {
+  .wrap span::after {
     content: '';
     position: absolute;
     top: -350%;
@@ -718,12 +712,12 @@ a.btn.effect:after {
 .wrap:hover {
   cursor: pointer; }
 
-.active span:before {
+.active span::before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
 
-.active span:after {
+.active span::after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
@@ -755,9 +749,9 @@ a.btn.effect:after {
     left: 30%; }
   .consultation input {
     padding: 10px 120px 10px 10px; }
-  .consultation h4:before {
+  .consultation h4::before {
     display: none; }
-  .consultation h4:after {
+  .consultation h4::after {
     display: none; } }
 
 @media screen and (max-width: 768px) {

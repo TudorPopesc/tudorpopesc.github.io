@@ -119,7 +119,7 @@ body {
   -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2); }
 
-button {
+.btn_zapr {
   position: relative;
   top: -20px;
   left: 2%;
@@ -143,7 +143,7 @@ button {
   border: none;
   border-radius: 6px; }
 
-button:hover {
+.btn_zapr:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#4d6fac), color-stop(200%, #65b5fe));
   background-image: -o-linear-gradient(bottom, #4d6fac 0%, #65b5fe 200%);
   background-image: linear-gradient(0deg, #4d6fac 0%, #65b5fe 200%);
