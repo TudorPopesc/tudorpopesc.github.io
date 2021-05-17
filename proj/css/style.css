@@ -120,36 +120,7 @@
         text-align: center;
         margin-bottom: 30px;
         font-family: sans-serif;
-        font-size: 24px;
-        font-weight: 700; }
-      .modall-content form button {
-        -webkit-box-shadow: 10px 18px 21px 0px rgba(249, 76, 79, 0.36);
-                box-shadow: 10px 18px 21px 0px rgba(249, 76, 79, 0.36);
-        width: 70%;
-        margin-left: 13%;
-        height: 50px;
-        border-radius: 25px;
-        background-color: #ffffff;
-        text-transform: uppercase;
-        font-family: Lato, sans-serif;
-        font-size: 21px;
-        font-weight: 600;
-        background-image: -webkit-gradient(linear, left bottom, left top, from(#ed2529), to(#fe676a));
-        background-image: -o-linear-gradient(bottom, #ed2529 0%, #fe676a 100%);
-        background-image: linear-gradient(0deg, #ed2529 0%, #fe676a 100%);
-        -webkit-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        transition: all 0.25s; }
-      .modall-content form button:hover {
-        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(200%, #ed2529), color-stop(400%, #fe676a));
-        background-image: -o-linear-gradient(bottom, #ed2529 200%, #fe676a 400%);
-        background-image: linear-gradient(0deg, #ed2529 200%, #fe676a 400%);
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(249, 76, 79, 0.36);
-                box-shadow: 0px 0px 0px 0px rgba(249, 76, 79, 0.36);
-        -webkit-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        transition: all 0.25s; }
-
+        font-size: 24px;}
 .btn-close {
   background-color: transparent;
   border: none;
@@ -230,7 +201,7 @@
     display: inline-table;
     padding: 25px;
     margin: 40px 0px 150px 50px; }
-  .section-1 .list-style li:before {
+  .section-1 .list-style li::before {
     content: url("../img/security.png");
     vertical-align: middle;
     margin-right: 10px; }
@@ -240,9 +211,7 @@
 .wrapper {
   margin-bottom: 40px; }
 
-.btn {
-  font-family: Lato, sans-serif;
-  font-size: 18px; }
+
 
 a.btn:link, a.btn:visited {
   position: relative;
@@ -755,6 +724,7 @@ a.btn.effect:after {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+
   .section-1 .abz-2, .section-1 .abz-3 {
     font-size: 16px; }
   .services img {
@@ -779,8 +749,9 @@ a.btn.effect:after {
     word-wrap: break-word; } }
 
 @media screen and (max-width: 425px) {
-  .navigation .nav {
+  .navigation {
     display: none; }
+
   .phone {
     display: block; }
   .consultation {
