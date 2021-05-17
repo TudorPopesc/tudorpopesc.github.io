@@ -134,7 +134,8 @@
   text-decoration: none; }
 
 .hide {
-  display: none; }
+  display: none !important; 
+}
 
 @-webkit-keyframes fade {
   from {
@@ -742,13 +743,20 @@ a.btn.effect:after {
     margin-left: 14%;
     margin-bottom: 10%; }
   .consultation a {
-    -webkit-transform: translate(70%, -180%);
-        -ms-transform: translate(70%, -180%);
             transform: translate(70%, -180%); }
   .howwork p {
     word-wrap: break-word; } }
 
 @media screen and (max-width: 425px) {
+  .btn-close{
+    left: 88%;
+      }
+  .cons-inp{
+    width: 300px;
+  }
+  .input-footer{
+    width: 300px;
+  }
   .navigation {
     display: none; }
 
@@ -759,8 +767,6 @@ a.btn.effect:after {
     .consultation input {
       margin-bottom: 0px; }
     .consultation a {
-      -webkit-transform: translate(18%, 50%);
-          -ms-transform: translate(18%, 50%);
               transform: translate(18%, 50%); }
   .form form {
     width: 350px;
