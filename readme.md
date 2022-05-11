@@ -1,5 +1,7 @@
-```sh
-cd dillinger
-npm i
-node app
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
 ```
