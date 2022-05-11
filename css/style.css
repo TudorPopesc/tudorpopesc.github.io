@@ -61,7 +61,10 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
-
+.errmsg{
+  color:red;
+  font-weight: bold;
+}
 .navigation a, .navigation p, .section-1 h1, .section-1 p, .services h1, .services-block h3, .services-block button, .features h1, .features-block h4, .form form h2, .howwork h5, .consultation h4, .consultation h2 {
   font-family: Lato, sans-serif;
   font-weight: 900; }

@@ -199,15 +199,9 @@ body {
     color: #222222; }
   .modall-content-q form {
     width: 80%; }
-    .modall-content-q form input {
-      width: 100%;
-      margin-top: 50px;
-      height: 50px;
-      padding: 10px; }
+    
     .modall-content-q form textarea {
-      width: 100%;
-      margin-top: 50px;
-      padding: 10px; }
+      width: 100%;}
     .modall-content-q form button {
       text-transform: uppercase;
       font-family: Lato, sans-serif;

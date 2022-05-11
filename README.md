@@ -1,2 +1,0 @@
-# tudorpopesc.github.io
-sss
