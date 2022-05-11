@@ -1,1 +1,5 @@
-<<`{php} {<?php echo $fol;?>}<<`
+```sh
+cd dillinger
+npm i
+node app
+```
