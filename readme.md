@@ -166,6 +166,6 @@ SELECT * FROM intrebari WHERE raspuns = '0'
 SELECT  role  FROM  admin  WHERE  login  = '$log'
 ```
 4.Instrumente utilizate:
-	- OpenServer version 5.4.1
-	- SQL manager
-	- PhpMyAdmin
+- OpenServer version 5.4.1
+- SQL manager
+- PhpMyAdmin
