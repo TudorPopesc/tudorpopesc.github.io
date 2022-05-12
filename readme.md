@@ -139,7 +139,7 @@ die("Connection failed: " . mysqli_connect_error());
 
 ?>
 ```
-3.Panoul de administrare se accesează culegând în bara de adrese URL adresa relativă a fișierului **admin.php**.
+3.Forma de logare pentru administratori și moderatori se accesează culegând în bara de adrese URL adresa relativă a fișierului **admin.php**.
 
 4.Comenzile MySQL
 - Întrebarea adresată de utilizator este culeasă după validare în variabila $intreb. În calitate de răspuns în câmpul ”raspuns” stocăm valoarea ”0” ceea ce semnifică o întrebare fără raspuns. 
