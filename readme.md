@@ -165,7 +165,7 @@ SELECT * FROM intrebari WHERE raspuns = '0'
 ```sql
 SELECT  role  FROM  admin  WHERE  login  = '$log'
 ```
-4.Instrumente utilizate:
+4.Instrumente utilizate în cadrul acestui proiect sunt:
 - OpenServer version 5.4.1
 - SQL manager
 - PhpMyAdmin
