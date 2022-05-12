@@ -103,6 +103,16 @@ if(isset($_REQUEST['intrebare'])){
               }
 
 ```
+```php
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method = "post">
+	<input type="text" name="name" class="form-control" placeholder="Ваше имя " value="<?php echo $name;?>"><br>
+	<input type="text" name="email" class="form-control" placeholder="Ваш email" value="<?php echo $email;?>"><br>
+	<textarea  class="form-control"  rows="7" placeholder="Напишите ваш вопрос" name="ques" value="<?php echo $intreb ;?>"></textarea>
+	<div class="justify-content-center text-center" style="margin-top:20px; padding:10px;">
+        	<input type="submit" class="btn-primary justify-content-center text-center" value="Задать вопрос">
+        </div>
+</form>
+```
 2. Conectarea cu baza de date se realizează în cadrul fișierului connection.php. Ascet fișier este solicitat cu ajutorul **require_once** în cadrul fișierelor .php unde este necesară conectarea cu baza de date.
 ``` php
 <?php
