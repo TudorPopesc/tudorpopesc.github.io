@@ -103,7 +103,7 @@ if(isset($_REQUEST['intrebare'])){
               }
 
 ```
-```php
+```html
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method = "post">
 	<input type="text" name="name" class="form-control" placeholder="Ваше имя " value="<?php echo $name;?>"><br>
 	<input type="text" name="email" class="form-control" placeholder="Ваш email" value="<?php echo $email;?>"><br>
