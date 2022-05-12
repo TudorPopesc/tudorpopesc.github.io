@@ -57,8 +57,52 @@ flowchart  LR
 
 ```
 ## Momente cheie
-1. Validarea datelor introduse este realizat pe partea ***serverului (server-side validation)*** cu ajutorul PHP.
+1. Validarea datelor introduse este realizat pe partea ***serverului (server-side validation)*** cu ajutorul PHP.<br>
 Exemplu:
+```php
+$name = $email = $intreb = "";
+$nameErr = $emailErr = $intrebErr = "";
+if(isset($_REQUEST['intrebare'])){
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = $email = $intreb = "";
+            $nameErr = $emailErr = $intrebErr = "";
+            $flagName = $flagEmail = $flagIntreb = false;
+    
+            if (empty($_POST["name"])){
+            $nameErr = "Введите имя!";
+            $flagName = false;
+              } else {
+                $name = test_input($_POST["name"]);
+            if (!preg_match("/^[a-zА-Яа-я]{3,15}$/i", $name)) {
+                $nameErr = "Имя не должно содержать цифр";
+                $flagName = false;
+                    }else $flagName = true;
+              }
+    
+              if (empty($_POST["email"])){
+            $emailErr = "Введите ваш email!";
+            $flagEmail = false;
+              } else {
+                $email = test_input($_POST["email"]);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                  $emailErr = "Не правельный адресс!";
+                    $flagEmail = false;
+                    }else $flagEmail = true;
+              }
+    
+              if (empty($_POST["ques"])){
+            $intrebErr = "Введите вопрос";
+            $flagIntreb = false;
+              } else {
+                $intreb = test_input($_POST["ques"]);
+                if (!preg_match("/^[A-Za-zА-Яа-я ,.!?+*&0-9]{5,1000}$/i",$intreb)) {
+                    $intrebErr = "Вопрос содержит запрещенные символы или слижком короткий!";
+                    $flagIntreb = false;
+                      }else $flagIntreb = true;
+                }
+              }
+
+```
 2. Conectarea cu baza de date se realizează în cadrul fișierului connection.php. Ascet fișier este solicitat cu ajutorul **require_once** în cadrul fișierelor .php unde este necesară conectarea cu baza de date.
 ``` php
 <?php
