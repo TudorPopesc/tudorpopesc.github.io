@@ -113,7 +113,7 @@ if(isset($_REQUEST['intrebare'])){
         </div>
 </form>
 ```
-2. Conectarea cu baza de date se realizează în cadrul fișierului connection.php. Ascet fișier este solicitat cu ajutorul **require_once** în cadrul fișierelor .php unde este necesară conectarea cu baza de date.
+2. Conectarea cu baza de date se realizează în cadrul fișierului connection.php. Acest fișier este solicitat cu ajutorul **require_once** în cadrul fișierelor .php unde este necesară conectarea cu baza de date.
 ``` php
 <?php
 
@@ -165,3 +165,7 @@ SELECT * FROM intrebari WHERE raspuns = '0'
 ```sql
 SELECT  role  FROM  admin  WHERE  login  = '$log'
 ```
+4.Instrumente utilizate:
+	- OpenServer version 5.4.1
+	- SQL manager
+	- PhpMyAdmin
