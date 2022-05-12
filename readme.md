@@ -56,3 +56,58 @@ flowchart  LR
  end  
 
 ```
+## Momente cheie
+1. Validarea datelor introduse este realizat pe partea ***serverului (server-side validation)*** cu ajutorul PHP.
+Exemplu:
+2. Conectarea cu baza de date se realizează în cadrul fișierului connection.php. Ascet fișier este solicitat cu ajutorul **require_once** în cadrul fișierelor .php unde este necesară conectarea cu baza de date.
+``` php
+<?php
+
+$servername = "localhost";
+
+$username = "root";
+
+$password = "";
+
+$dbName = "company";
+
+// Create connection
+
+$connection = mysqli_connect($servername, $username, $password,$dbName);
+
+// Check connection
+
+if (!$connection) {
+
+die("Connection failed: " . mysqli_connect_error());
+
+}
+
+?>
+```
+3.Panoul de administrare se accesează culegând în bara de adrese URL adresa relativă a fișierului **admin.php**.
+
+4.Comenzile MySQL
+- Întrebarea adresată de utilizator este culeasă după validare în variabila $intreb. În calitate de răspuns în câmpul ”raspuns” stocăm valoarea ”0” ceea ce semnifică o întrebare fără raspuns. 
+```sql
+INSERT  INTO intrebari (email, nume, intrebare, raspuns)
+VALUES ('$email', '$name', '$intreb','0')";
+``` 
+- Sunt selectate câmpurile login, password și role din tabela admin. În câmpul role păstrăm rolul : 0 – moderator , 1 – administrator. În câmpul password parola se păstrează sub formă de MD5 Hash.
+ ```sql
+SELECT login,password,role FROM admin
+```
+```sql
+SELECT * FROM admin WHERE role = 1
+```
+```sql
+SELECT id_admin FROM admin WHERE role = 0.
+```
+- Selectăm întrebările fără răspuns.
+```sql
+SELECT * FROM intrebari WHERE raspuns = '0'
+```
+- Selectăm câmpul `role` din rândurile cărora corespunde  câmpul login cu variabila $log.
+```sql
+SELECT  role  FROM  admin  WHERE  login  = '$log'
+```
